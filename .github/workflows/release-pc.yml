@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.config.os }}
+    permissions:
+      contents: write
     strategy:
       matrix:
         config:
